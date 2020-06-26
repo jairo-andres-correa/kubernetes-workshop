@@ -1,0 +1,27 @@
+Rolling Upgrade
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: random-generator
+spec:
+  replicas: 3                            1
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1                        2
+      maxUnavailable: 1                  3
+    selector:
+      matchLabels:
+        app: random-generator
+    template:
+      metadata:
+        labels:
+          app: random-generator
+      spec:
+        containers:
+        - image: k8spatterns/random-generator:1.0
+          name: random-generator
+          readinessProbe:                4
+            exec:
+              command: [ "stat", "/random-generator-ready" ]
