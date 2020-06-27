@@ -1,2 +1,5 @@
 .vagrant
 setup/terraform/*.json
+setup/terraform/.terraform
+setup/terraform/*.tfstate*
+setup/terraform/*.tfvars
