@@ -21,7 +21,7 @@ variable "machine_types" {
   type    = map
   default = {
     dev  = "f1-micro"
-    test = "f1-micro"
+    control = "e2-small"
     prod = "f1-micro"
   }
 }
