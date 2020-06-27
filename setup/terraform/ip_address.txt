@@ -1,0 +1,7 @@
+terraform-instance:  35.239.40.203 
+terraform-instance:  104.198.250.1 
+terraform-instance:  35.202.92.177 
+bastion:  104.198.250.1 
+bastion:  35.202.92.177 
+instance1:  104.198.250.1 
+instance1:  35.193.62.179 
