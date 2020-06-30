@@ -102,7 +102,7 @@ resource "google_compute_firewall" "kube-firewall" {
 
   allow {
     protocol = "tcp"
-    ports    = ["6443"] 
+    ports    = ["6443", "10250"] 
   }
 
 }
