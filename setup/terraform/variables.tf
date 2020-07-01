@@ -33,6 +33,6 @@ variable "lb-zones" {
   default = {
     i1 = "us-central1-a"
     i2 = "us-central1-a"
-    i3 = "us-central1-b"
+    i3 = "us-central1-a"
   }
 }
